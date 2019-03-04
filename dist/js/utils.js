@@ -8,3 +8,7 @@ var e = function (selector, element) {
 var es = function (selector, element) {
     return (element || document).querySelectorAll(selector)
 }
+
+var bindEvent = function (element, eventName, callback) {
+    element.addEventListener(eventName, callback)
+}
